@@ -1,4 +1,4 @@
-# ** Low-Memory-Onboard-Convolution-Engine-using-verilog ** 
+# <b> Low-Memory-Onboard-Convolution-Engine-using-verilog </b>
 
 As part of my FPGA-based project, I developed a high-performance convolution accelerator that enables real-time image processing with minimal memory requirements. This project aimed to address the challenges of implementing computationally intensive convolution operations on resource-constrained devices, such as embedded systems and edge computing devices.
 
