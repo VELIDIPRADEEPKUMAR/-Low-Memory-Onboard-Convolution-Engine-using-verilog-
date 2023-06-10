@@ -21,3 +21,14 @@ As part of my FPGA-based project, I developed a high-performance convolution acc
 - <b>  Embedded Systems: </b> The accelerator can be integrated into embedded systems used in robotics, autonomous vehicles, and smart devices, enabling efficient and real-time image processing capabilities.
 
 - <b>  Edge Computing: </b> By offloading the computation-intensive convolution tasks to dedicated hardware, the accelerator contributes to the efficiency and responsiveness of edge computing devices.
+
+
+## Convolution Engine
+
+To perform convolution on an image, the first step is to collect the image frame from the OV7670 camera module. The verilog codes provided above facilitate the seamless collection of image data. The process involves utilizing an I2C driver and SCCB controller to initialize the camera and configure its settings.
+
+Once the image frame is collected, it is passed to the convolute module for computation. The convolute module implements the convolution algorithm, which applies a filter or kernel to the image to extract meaningful features or perform image enhancements. This module efficiently processes the image data, leveraging hardware optimizations to achieve real-time performance.
+
+The resulting convoluted image data is then sent to a 320x480 TFT display for visualization. This is accomplished using SPI communication, employing the ILI9488 driver and TFT display controller. The SPI interface ensures fast and reliable transmission of the convoluted image data to the display, enabling real-time rendering of the processed image.
+
+By integrating the OV7670 camera module, the convolute module, and the TFT display, this project demonstrates a complete pipeline for capturing, processing, and displaying images in real-time. The efficient utilization of verilog code, I2C, SCCB, SPI, and display drivers enables seamless image acquisition, convolution, and visualization, making it an ideal solution for various image processing applications.
